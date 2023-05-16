@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.attributs:hover div{
+    @apply w-[80%];
+}
+
+.card:hover img {
+    @apply scale-125;
+}
+
+.card:hover .text-numbers{
+    @apply tracking-wider;
+}
+ .card{
+     @apply cursor-pointer;
+ }
