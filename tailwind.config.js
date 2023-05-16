@@ -8,6 +8,7 @@ module.exports = {
       'white': '#f3f4f5',
       'black': '#1b2222',
       'blue': '#1090D3',
+      'clear-blue': '#48a2e1',
       'gray': '#e8f1f1',
       'green': '#20e492',
       'grayscale': {
@@ -21,6 +22,15 @@ module.exports = {
         800: '#1b2222',
         900: '#0E1010',
       },
+    },
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
     },
     extend: {},
   },
