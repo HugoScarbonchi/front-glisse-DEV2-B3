@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav {
+    @apply fixed m-auto left-0 right-0 top-4 flex w-full bg-black bg-opacity-80 backdrop-blur-sm container rounded-full p-2 px-4 justify-between items-center z-50;
+}
+
+nav > .logo > img {
+    @apply h-6 scale-[4];
+    transform-origin: 25% 50%;
+}
+
+nav > ul > li {
+    @apply text-[.75rem] text-grayscale-500 font-normal flex items-center relative cursor-pointer transition-colors;
+}
+
+nav > ul > li.active::after,
+nav > ul > li:hover::after {
+    @apply scale-100 opacity-100;
+}
+
+nav > ul > li.active,
+nav > ul > li:hover {
+    @apply text-white;
+}
+
+nav > ul > li::after,
+nav > ul > li::before {
+    @apply content-[''] h-[1px] rounded-full w-6 bg-white absolute -bottom-0.5 left-0 right-0 m-auto scale-0 opacity-0;
+    transition: .15s ease-out;
+}
+nav > ul > li.active::before,
+nav > ul > li:hover::before {
+    @apply scale-x-105 scale-y-[2.3] opacity-50 blur-[.4px] rounded-[100%];
+}
